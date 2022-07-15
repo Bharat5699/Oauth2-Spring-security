@@ -4,11 +4,11 @@ spring:
       client:
         registration:
           github:
-            clientId: 30f2bafc786accbdd2a5
-            clientSecret: 0b8b01345db42cc013711874b578576af5abfa80
+            clientId: client_id
+            clientSecret: client_secret
           google:
-            client-id: 315058810321-dnuvddt2dbk0og815n9jt1d8t2ev4bpe.apps.googleusercontent.com
-            client-secret: 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
+            client-id: client_id
+            client-secret: client_secret
           api-client-oidc:
             provider: spring
             client-id: api-client
