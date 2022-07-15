@@ -1,0 +1,31 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          github:
+            clientId: 30f2bafc786accbdd2a5
+            clientSecret: 0b8b01345db42cc013711874b578576af5abfa80
+          google:
+            client-id: 315058810321-dnuvddt2dbk0og815n9jt1d8t2ev4bpe.apps.googleusercontent.com
+            client-secret: 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
+          api-client-oidc:
+            provider: spring
+            client-id: api-client
+            client-secret: secret
+            authorization-grant-type: authorization_code
+            redirect-uri: "http://127.0.0.1:8080/login/oauth2/code/{registrationId}"
+            scope: openid
+            client-name: api-client-oidc
+          api-client-authorization-code:
+            provider: spring
+            client-id: api-client
+            client-secret: secret
+            authorization-grant-type: authorization_code
+            redirect-uri: "http://127.0.0.1:8080/authorized"
+            scope: api.read
+            client-name: api-client-authorization-code
+        provider:
+          spring:
+            issuer-uri: http://localhost:9000
+            
